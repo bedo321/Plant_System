@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <h1 id="welcome-message">Plant Dashboard</h1>
+        <div class="header-actions">
+          <button id="save-changes-btn" class="btn btn-primary">
+            Save Changes
+          </button>
+          <button id="logout-btn" class="btn btn-danger">Logout</button>
+        </div>
+      </header>
+
+      <main class="dashboard-grid">
+        <div class="column" id="master-column">
+          <div class="column-header">
+            <button id="back-btn" class="btn-back" style="display: none">
+              &larr; Back to Plants
+            </button>
+            <h2 id="master-title">Plants</h2>
+          </div>
+          <ul id="master-list" class="item-list"></ul>
+          <div id="action-panel" class="action-panel" style="display: none">
+            <button id="view-details-btn" class="btn btn-primary">
+              View / Manage Lines
+            </button>
+            <button id="delete-selected-btn" class="btn btn-danger">
+              Delete Selected
+            </button>
+          </div>
+          <form id="add-item-form" class="add-form">
+            <input
+              type="text"
+              id="new-item-name"
+              placeholder="Add a new plant..."
+              required
+            />
+            <button type="submit" id="add-item-btn" class="btn btn-success">
+              Add Plant
+            </button>
+          </form>
+        </div>
+
+        <div class="column" id="detail-column">
+          <div class="column-header">
+            <h2 id="detail-title">Select an item to see details</h2>
+          </div>
+          <ul id="detail-list" class="item-list"></ul>
+          <form id="add-machine-form" class="add-form" style="display: none">
+            <input
+              type="text"
+              id="new-machine-name"
+              placeholder="Add a new machine..."
+              required
+            />
+            <button type="submit" class="btn btn-success">Add Machine</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="dashboard_script.js"></script>
+  </body>
+</html>

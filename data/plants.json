@@ -1,0 +1,156 @@
+{
+  "plantstructure": {
+    "plant": [
+      {
+        "id": "1",
+        "name": "Electric Water Heater-01",
+        "line": [
+          {
+            "id": "1",
+            "name": "Boiler Production Line",
+            "machine": [
+              {
+                "id": "1",
+                "name": "Sheet InTake"
+              },
+              {
+                "id": "2",
+                "name": "Logitudal welding"
+              },
+              {
+                "id": "3",
+                "name": "Circular  welding"
+              },
+              {
+                "id": "4",
+                "name": "Top/Bottom Cap Fixing Machine"
+              },
+              {
+                "id": "21",
+                "name": "test"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "name": "Enameling",
+            "machine": [
+              {
+                "id": "5",
+                "name": "Short Plasting machine"
+              },
+              {
+                "id": "6",
+                "name": "furnance"
+              }
+            ]
+          },
+          {
+            "id": "3",
+            "name": "Final Assembly",
+            "machine": [
+              {
+                "id": "7",
+                "name": "Packing machine"
+              },
+              {
+                "id": "8",
+                "name": "Palletizer"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Electric Water Heater-02",
+        "line": [
+          {
+            "id": "4",
+            "name": "Boiler Production Line",
+            "machine": [
+              {
+                "id": "9",
+                "name": "Sheet InTake"
+              },
+              {
+                "id": "10",
+                "name": "Logitudal welding"
+              },
+              {
+                "id": "11",
+                "name": "Circular  welding"
+              },
+              {
+                "id": "12",
+                "name": "Top/Bottom Cap Fixing Machine"
+              }
+            ]
+          },
+          {
+            "id": "5",
+            "name": "Enameling",
+            "machine": [
+              {
+                "id": "13",
+                "name": "Short Plasting machine"
+              },
+              {
+                "id": "14",
+                "name": "furnance"
+              }
+            ]
+          },
+          {
+            "id": "15",
+            "name": "Final Assembly",
+            "machine": [
+              {
+                "id": "16",
+                "name": "Packing machine"
+              },
+              {
+                "id": "17",
+                "name": "Palletizer"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1753393834581",
+        "name": "yes",
+        "line": [
+          {
+            "id": "1753393865265",
+            "name": "Line 1",
+            "machine": [
+              {
+                "id": "1753393873021",
+                "name": "Machine 1"
+              },
+              {
+                "id": "1753393875448",
+                "name": "Machine 2"
+              }
+            ]
+          },
+          {
+            "id": "1753393867719",
+            "name": "Line 2",
+            "machine": [
+              {
+                "id": "1753393879113",
+                "name": "Machine 1"
+              },
+              {
+                "id": "1753393882551",
+                "name": "Machine 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
