@@ -23,7 +23,6 @@
           <button id="logout-btn" class="btn btn-danger">Logout</button>
         </div>
       </header>
-
       <main class="dashboard-grid">
         <div class="column" id="master-column">
           <div class="column-header">
@@ -32,12 +31,24 @@
             </button>
             <h2 id="master-title">Plants</h2>
           </div>
+          <div class="column-controls">
+            <input
+              type="text"
+              id="master-search-input"
+              class="search-input"
+              placeholder="Search plants..."
+            />
+          </div>
           <ul id="master-list" class="item-list"></ul>
-          <div id="action-panel" class="action-panel" style="display: none">
-            <button id="view-details-btn" class="btn btn-primary">
-              View / Manage Lines
+          <div
+            id="master-action-panel"
+            class="action-panel"
+            style="display: none"
+          >
+            <button id="edit-master-btn" class="btn btn-secondary">
+              Edit Selected
             </button>
-            <button id="delete-selected-btn" class="btn btn-danger">
+            <button id="delete-master-btn" class="btn btn-danger">
               Delete Selected
             </button>
           </div>
@@ -53,12 +64,32 @@
             </button>
           </form>
         </div>
-
         <div class="column" id="detail-column">
           <div class="column-header">
-            <h2 id="detail-title">Select an item to see details</h2>
+            <h2 id="detail-title">Select a plant to see details</h2>
+          </div>
+          <div class="column-controls">
+            <input
+              type="text"
+              id="detail-search-input"
+              class="search-input"
+              placeholder="Search..."
+              style="display: none"
+            />
           </div>
           <ul id="detail-list" class="item-list"></ul>
+          <div
+            id="detail-action-panel"
+            class="action-panel"
+            style="display: none"
+          >
+            <button id="edit-detail-btn" class="btn btn-secondary">
+              Edit Selected
+            </button>
+            <button id="delete-detail-btn" class="btn btn-danger">
+              Delete Selected
+            </button>
+          </div>
           <form id="add-machine-form" class="add-form" style="display: none">
             <input
               type="text"
@@ -71,7 +102,26 @@
         </div>
       </main>
     </div>
-
+    <div id="modal-overlay" class="modal-overlay" style="display: none">
+      <div class="modal-box">
+        <h2 id="modal-title">Modal Title</h2>
+        <p id="modal-message">This is the modal message.</p>
+        <input
+          type="text"
+          id="modal-input"
+          class="modal-input"
+          style="display: none"
+        />
+        <div class="modal-actions">
+          <button id="modal-cancel-btn" class="btn btn-secondary">
+            Cancel
+          </button>
+          <button id="modal-confirm-btn" class="btn btn-primary">
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="dashboard_script.js"></script>
   </body>
 </html>

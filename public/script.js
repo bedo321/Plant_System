@@ -44,8 +44,6 @@ $(document).ready(function() {
             if (!response.ok) {
                 throw new Error(result.message);
             }
-
-            // Store logged-in user info in sessionStorage
             sessionStorage.setItem('loggedInUser', result.username);
             window.location.href = '/dashboard.html';
 
